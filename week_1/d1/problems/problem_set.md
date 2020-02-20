@@ -86,7 +86,7 @@ reading for how to run `.js` files.
 
 ```js
 // 1
-var idx = 'abcde'.indexOf('D');
+let idx = 'abcde'.indexOf('D');
 idx = idx + 11;
 console.log(idx); // ?
 idx * 2;
@@ -95,27 +95,27 @@ console.log(idx); // ?
 
 ```js
 // 2
-var num = 33;
-var isEven = num % 2 === 0;
+let num = 33;
+const isEven = num % 2 === 0;
 console.log(isEven); // ?
 console.log(!isEven); // ?
 ```
 
 ```js
 // 3
-var str1 = 'marker';
-var num = 'whiteboard'.length - str1.length;
+const str1 = 'marker';
+const num = 'whiteboard'.length - str1.length;
 console.log(num); // ?
-var str2 = 'bootcamp';
+const str2 = 'bootcamp';
 console.log(str2[num].toUpperCase()); // ?
-var char = str2[num].toLowerCase(); // ?
+const char = str2[num].toLowerCase(); // ?
 console.log(char + '!'); // ?
 ```
 
 ```js
 // 4
-var sentence = 'welcome to bootcamp prep';
-var lastChar = sentence[sentence.length - 1];
+const sentence = 'welcome to bootcamp prep';
+const lastChar = sentence[sentence.length - 1];
 console.log(lastChar); // ?
 console.log(sentence.indexOf(lastChar)); // ?
 ```
@@ -130,7 +130,7 @@ in each example to experiment!
 
 ```js
 // 5
-var age = 30; // try different numbers here
+const age = 30; // try different numbers here
 
 if (age > 30) {
   console.log('older than 30');
@@ -141,7 +141,7 @@ if (age > 30) {
 
 ```js
 // 6
-var str = 'pizza'; // try different strings here
+const str = 'pizza'; // try different strings here
 
 if (str.length > 10) {
   console.log('long string');
@@ -155,7 +155,7 @@ if (str[0] === 'p') {
 
 ```js
 // 7
-var num = 15; // try different numbers here
+const num = 15; // try different numbers here
 
 if (num % 3 === 0) {
   console.log('divisible by 3');
@@ -166,7 +166,7 @@ if (num % 3 === 0) {
 
 ```js
 // 8
-var num = 15; // try different numbers here
+const num = 15; // try different numbers here
 
 if (num % 3 === 0) {
   console.log('divisible by 3');
@@ -178,7 +178,7 @@ if (num % 5 === 0) {
 
 ```js
 // 9
-var str = 'JosEphs BootCAMP'; // try different strings here
+const str = 'JosEphs BootCAMP'; // try different strings here
 
 if (str[0] === str[0].toUpperCase()) {
   console.log('starts with a capital!');
@@ -190,7 +190,7 @@ if (str[str.length - 1] === str[str.length - 1].toUpperCase()) {
 
 ```js
 // 10
-var num = -44; // try different numbers here
+const num = -44; // try different numbers here
 
 if (num > 0) {
   console.log('positive');
@@ -216,14 +216,14 @@ errors like this will cause your code to be totally misunderstood by the compute
 Practice, practice, practice!
 
 ```js
-var num = 11; // feel free to change the value of this variable
+let num = 11; // feel free to change the value of this variable
 if (num > 5) {
   console.log('if');
 }
 ```
 
 ```js
-var num = 5; // feel free to change the value of this variable
+let num = 5; // feel free to change the value of this variable
 if (num > 5) {
   console.log('if');
 } else {
@@ -232,7 +232,7 @@ if (num > 5) {
 ```
 
 ```js
-var num = 0; // feel free to change the value of this variable
+let num = 0; // feel free to change the value of this variable
 if (num < 0) {
   console.log('if');
 } else if (num > 0) {
